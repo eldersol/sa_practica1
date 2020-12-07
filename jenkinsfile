@@ -1,0 +1,10 @@
+node {
+    stage('Checkout SCM'){
+        git branch: 'master', url: 'https://github.com/eldersol/sa_practica1.git'
+    }
+
+    stage('Install node modules'){
+        sh "npm install"
+    }
+
+}
