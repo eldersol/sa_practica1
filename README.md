@@ -1,4 +1,4 @@
-# Practica1 Software avanzado vacaciones diciembre
+# Practica1 Software avanzado
 
 
 
