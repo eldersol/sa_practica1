@@ -1,11 +1,8 @@
+// This shows a simple example of how to archive the build output artifacts.
 node {
-    stage('Checkout SCM'){
-        git branch: 'master', url: 'https://github.com/eldersol/sa_practica1.git'
-    }
-
-    stage('Install node modules'){
-        echo 'npm install'
-    }
+    stage "Create build output"
+    
+    // Make the output directory.
+    sh "mkdir output"
 
 }
-
