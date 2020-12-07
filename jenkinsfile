@@ -8,7 +8,7 @@ node {
     }
 	
 	stage('Test'){
-        bat 'ng test'
+        bat 'npm run test:ci'
     }
 	
 	stage('BUILD'){
