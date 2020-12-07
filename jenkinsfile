@@ -4,15 +4,15 @@ node {
     }
 
     stage('Install node modules'){
-        sh 'npm install'
+        bat 'npm install'
     }
 	
 	stage('Test'){
-        sh 'ng test'
+        bat 'ng test'
     }
 	
 	stage('BUILD'){
-        sh 'ng build'
+        bat 'ng build'
     }
 	
 	
