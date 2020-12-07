@@ -1,16 +1,11 @@
-pipeline {
-  agent any
+node {
+    stage('Checkout SCM'){
+        git branch: 'master', url: 'https://github.com/eldersol/sa_practica1.git'
+    }
 
-  stages {    
-    stage('Cloning Git') {
-      steps {
-        git 'https://github.com/eldersol/sa_practica1.git'
-      }
-    }        
-    stage('Install dependencies') {
-      steps {
-        sh 'npm i -save express'
-      }
-    }          
-  }
+    stage('Install node modules'){
+        echo 'npm install'
+    }
+
 }
+
