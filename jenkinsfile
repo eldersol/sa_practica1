@@ -4,7 +4,7 @@ node {
     }
 
     stage('Install node modules'){
-        echo 'mkdir output'
+        sh 'mkdir output'
     }
 
 }
